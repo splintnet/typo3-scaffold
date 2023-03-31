@@ -1,0 +1,12 @@
+base: 'https://12.typo3.ddev.site/'
+languages:
+  - title: English
+    enabled: true
+    languageId: 0
+    base: /
+    locale: en_US.UTF-8
+    navigationTitle: English
+    flag: en-us-gb
+    websiteTitle: Page
+rootPageId: 1
+websiteTitle: ''
