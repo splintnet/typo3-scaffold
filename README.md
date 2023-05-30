@@ -9,7 +9,7 @@ Get going quickly with TYPO3 CMS.
 
 ## Quickstart
 
-* `composer create-project typo3-scaffold typo3-website --repository-url=https://github.com/splintnet/typo3-scaffold`
+* `composer create-project typo3-scaffold typo3-website --repository="{\"url\": \"https://github.com/splintnet/typo3-scaffold\", \"type\": \"vcs\"}" --stability=dev --remove-vcs`
 * `cd typo3-website`
 
 ### Setup
@@ -29,18 +29,20 @@ with your own environment configuration.
 
 ```bash
 composer exec -- typo3 setup \
-    --no-interaction \
     --driver=mysqli \
-    --username=typo3 \
-    --password=typo3 \
+    --username=root \
+    --password=root \
     --host=127.0.0.1 \
     --port=3306 \
-    --dbname=typo3 \
+    --dbname=typo3_example \
     --admin-username=admin \
     --admin-email="info@splintnet.de" \
-    --admin-user-password="Imping1232..." \
+    --admin-user-password="Sup3rAdm1N!" \
     --project-name="TYPO3 Project" \
     --create-site="http://typo3-website.test/"
+    --force
+    
+vendor/bin/typo3 database:updateschema
 ```
 
 Generate Introduction Package
