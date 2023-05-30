@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-    <file source-language="en" datatype="plaintext" original="messages" date="2023-03-31UTC22:07:060">
+    <file source-language="en" datatype="plaintext" original="messages" date="2023-05-30UTC13:44:060">
         <header>
             <authorName>Jonas Imping</authorName>
             <authorEmail>info@splintnet.de</authorEmail>
         </header>
         <body>
-            <trans-unit id="backend_layout.default">
-                <source>Default</source>
+            <trans-unit id="backend_layout.example">
+                <source>Example</source>
             </trans-unit>
             <trans-unit id="backend_layout.column.normal">
                 <source>Normal</source>

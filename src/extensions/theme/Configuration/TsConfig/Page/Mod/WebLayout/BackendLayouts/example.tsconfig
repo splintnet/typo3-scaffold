@@ -1,11 +1,11 @@
 #
-# BACKENDLAYOUT: DEFAULT
+# BACKENDLAYOUT: EXAMPLE
 #
 mod {
     web_layout {
         BackendLayouts {
-            default {
-                title = LLL:EXT:theme/Resources/Private/Language/locallang_be.xlf:backend_layout.default
+            example {
+                title = LLL:EXT:theme/Resources/Private/Language/locallang_be.xlf:backend_layout.example
                 config {
                     backend_layout {
                         colCount = 1
@@ -22,7 +22,7 @@ mod {
                         }
                     }
                 }
-                icon = EXT:theme/Resources/Public/Images/BackendLayouts/default.png
+                icon = EXT:theme/Resources/Public/Icons/BackendLayouts/example.svg
             }
         }
     }

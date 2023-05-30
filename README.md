@@ -4,13 +4,13 @@ Get going quickly with TYPO3 CMS.
 
 ## Prerequisites
 
-* PHP 8.1
+* PHP 8.2
 * [Composer](https://getcomposer.org/download/)
 
 ## Quickstart
 
-* `composer create-project typo3/cms-base-distribution project-name ^12`
-* `cd project-name`
+* `composer create-project typo3-scaffold typo3-website --repository-url=https://github.com/splintnet/typo3-scaffold`
+* `cd typo3-website`
 
 ### Setup
 
@@ -37,10 +37,16 @@ composer exec -- typo3 setup \
     --port=3306 \
     --dbname=typo3 \
     --admin-username=admin \
-    --admin-email="info@typo3.org" \
-    --admin-user-password=password \
-    --project-name="My TYPO3 Project" \
-    --create-site="https://localhost/"
+    --admin-email="info@splintnet.de" \
+    --admin-user-password="Imping1232..." \
+    --project-name="TYPO3 Project" \
+    --create-site="http://typo3-website.test/"
+```
+
+Generate Introduction Package
+
+```bash
+vendor/bin/typo3 extension:setup
 ```
 
 ### Development server

@@ -1,8 +1,9 @@
 .DS_Store
 .idea
+.env
 nbproject
 /var/*
-!/var/labels
+/config
 /vendor
 /public/*
 !/public/.htaccess
