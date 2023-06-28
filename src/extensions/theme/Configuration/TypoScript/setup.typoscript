@@ -4,6 +4,10 @@
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/setup.typoscript">
 
 
+[applicationContext == "Development"]
+config.yoast_seo.enabled = 0
+[end]
+
 ##############
 #### PAGE ####
 ##############

@@ -35,12 +35,6 @@ return [
             'loginLogo' => '',
             'loginLogoAlt' => '',
         ],
-        'belogin_images' => [
-            'IPmask' => '',
-            'folder' => 'fileadmin/images/',
-            'source' => 'google',
-            'unsplashUrl' => 'https://source.unsplash.com/1600x900/?nature',
-        ],
         'bootstrap_package' => [
             'disableCssProcessing' => '0',
             'disableGoogleFontCaching' => '0',
@@ -69,6 +63,10 @@ return [
         'extensionmanager' => [
             'automaticInstallation' => '1',
             'offlineMode' => '0',
+        ],
+        'google_indexer' => [
+            'config_file_path' => '/var/www/html/',
+            'doktype' => '1',
         ],
         'indexed_search' => [
             'catdoc' => '/usr/bin/',
@@ -101,6 +99,7 @@ return [
             'layouts' => '',
             'layouts_backend' => '',
             'loader_identifier' => '',
+            'override_shared_fields' => '0',
             'partials' => '',
             'partials_backend' => '',
             'preview' => '',
@@ -121,6 +120,10 @@ return [
             'slugBehaviour' => 'unique',
             'storageUidImporter' => '1',
             'tagPid' => '1',
+        ],
+        'save_and_close' => [
+            'saveAndClose' => '1',
+            'saveAndView' => '1',
         ],
         'scheduler' => [
             'maxLifetime' => '1440',

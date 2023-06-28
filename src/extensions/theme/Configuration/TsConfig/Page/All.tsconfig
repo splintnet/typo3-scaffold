@@ -5,3 +5,9 @@
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme/Configuration/TsConfig/Page/TCEFORM.tsconfig">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme/Configuration/TsConfig/Page/TCEMAIN.tsconfig">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme/Configuration/TsConfig/Page/Mod/WebLayout/BackendLayouts.tsconfig">
+
+[applicationContext == "Development"]
+mod.web_SeoPlugin {
+    disableSnippetPreview = 1
+}
+[end]

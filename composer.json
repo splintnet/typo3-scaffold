@@ -1,77 +1,87 @@
 {
-    "name": "splintnet/typo3-scaffold",
-    "description": "TYPO3 CMS Base Distribution",
-    "license": "GPL-2.0-or-later",
-    "type": "project",
-    "config": {
-        "allow-plugins": {
-            "typo3/class-alias-loader": true,
-            "typo3/cms-composer-installers": true,
-            "helhum/dotenv-connector": true
-        },
-        "platform": {
-            "php": "8.2.6"
-        },
-        "sort-packages": true
+  "name": "splintnet/typo3-scaffold",
+  "description": "TYPO3 CMS Base Distribution",
+  "license": "GPL-2.0-or-later",
+  "type": "project",
+  "config": {
+    "allow-plugins": {
+      "helhum/dotenv-connector": true,
+      "typo3/class-alias-loader": true,
+      "typo3/cms-composer-installers": true
     },
-    "minimum-stability": "dev",
-    "prefer-stable": true,
-    "require": {
-        "b13/container": "^2.2",
-        "causal/image_autoresize": "^1.6",
-        "clickstorm/cs-seo": "^8.0",
-        "drblitz/google-indexer": "^2.0",
-        "georgringer/news": "^11.0",
-        "helhum/dotenv-connector": "^3.0",
-        "helhum/typo3-console": "^8.0",
-        "mask/mask": "^8.1",
-        "plan2net/webp": "^5.0",
-        "schliesser/sitecrawler": "^2.0",
-        "sitegeist/sms-responsive-images": "^3.0",
-        "splintnet/theme": "dev-main",
-        "t3brightside/advancedtitle": "^1.2",
-        "typo3/cms-backend": "^12.4.0",
-        "typo3/cms-belog": "^12.4.0",
-        "typo3/cms-beuser": "^12.4.0",
-        "typo3/cms-core": "^12.4.0",
-        "typo3/cms-dashboard": "^12.4.0",
-        "typo3/cms-extbase": "^12.4.0",
-        "typo3/cms-extensionmanager": "^12.4.0",
-        "typo3/cms-felogin": "^12.4.0",
-        "typo3/cms-filelist": "^12.4.0",
-        "typo3/cms-fluid": "^12.4.0",
-        "typo3/cms-fluid-styled-content": "^12.4.0",
-        "typo3/cms-form": "^12.4.0",
-        "typo3/cms-frontend": "^12.4.0",
-        "typo3/cms-impexp": "^12.4.0",
-        "typo3/cms-info": "^12.4.0",
-        "typo3/cms-install": "^12.4.0",
-        "typo3/cms-introduction": "^4.6",
-        "typo3/cms-reactions": "^12.4.0",
-        "typo3/cms-recycler": "^12.4",
-        "typo3/cms-redirects": "^12.4",
-        "typo3/cms-rte-ckeditor": "^12.4.0",
-        "typo3/cms-scheduler": "^12.4",
-        "typo3/cms-seo": "^12.4.0",
-        "typo3/cms-setup": "^12.4.0",
-        "typo3/cms-sys-note": "^12.4.0",
-        "typo3/cms-t3editor": "^12.4.0",
-        "typo3/cms-tstemplate": "^12.4.0",
-        "typo3/cms-viewpage": "^12.4.0",
-        "typo3/cms-webhooks": "^12.4.0",
-        "typo3/cms-workspaces": "^12.4",
-        "wapplersystems/save_and_close": "^12.0",
-        "yoast-seo-for-typo3/yoast_seo": "^9.0"
+    "platform": {
+      "php": "8.2.6"
     },
-    "require-dev": {
-        "roave/security-advisories": "dev-latest",
-        "b13/make": "^0.1.6",
-        "typo3/cms-lowlevel": "^12.4"
-    },
-    "repositories": {
-        "0_local_packages": {
-            "type": "path",
-            "url": "src/extensions/*"
-        }
+    "sort-packages": true
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {
+    "b13/container": "^2.2",
+    "causal/image_autoresize": "^1.6",
+    "clickstorm/cs-seo": "^8.1",
+    "drblitz/google-indexer": "^2.0",
+    "georgringer/news": "^11.0",
+    "helhum/dotenv-connector": "^3.0",
+    "helhum/typo3-console": "^8.0",
+    "mask/mask": "^8.1",
+    "plan2net/webp": "^5.0",
+    "schliesser/sitecrawler": "^2.0",
+    "sitegeist/sms-responsive-images": "^3.0",
+    "splintnet/theme": "dev-main",
+    "t3brightside/advancedtitle": "^1.2",
+    "typo3/cms-adminpanel": "^12.4",
+    "typo3/cms-backend": "^12.4.0",
+    "typo3/cms-belog": "^12.4.0",
+    "typo3/cms-beuser": "^12.4.0",
+    "typo3/cms-core": "^12.4.0",
+    "typo3/cms-dashboard": "^12.4.0",
+    "typo3/cms-extbase": "^12.4.0",
+    "typo3/cms-extensionmanager": "^12.4.0",
+    "typo3/cms-felogin": "^12.4.0",
+    "typo3/cms-filelist": "^12.4.0",
+    "typo3/cms-fluid": "^12.4.0",
+    "typo3/cms-fluid-styled-content": "^12.4.0",
+    "typo3/cms-form": "^12.4.0",
+    "typo3/cms-frontend": "^12.4.0",
+    "typo3/cms-impexp": "^12.4.0",
+    "typo3/cms-info": "^12.4.0",
+    "typo3/cms-install": "^12.4.0",
+    "typo3/cms-introduction": "^4.6",
+    "typo3/cms-reactions": "^12.4.0",
+    "typo3/cms-recycler": "^12.4",
+    "typo3/cms-redirects": "^12.4",
+    "typo3/cms-rte-ckeditor": "^12.4.0",
+    "typo3/cms-scheduler": "^12.4",
+    "typo3/cms-seo": "^12.4.0",
+    "typo3/cms-setup": "^12.4.0",
+    "typo3/cms-sys-note": "^12.4.0",
+    "typo3/cms-t3editor": "^12.4.0",
+    "typo3/cms-tstemplate": "^12.4.0",
+    "typo3/cms-viewpage": "^12.4.0",
+    "typo3/cms-webhooks": "^12.4.0",
+    "typo3/cms-workspaces": "^12.4",
+    "wapplersystems/save_and_close": "^12.0",
+    "yoast-seo-for-typo3/yoast_seo": "^9.0"
+  },
+  "require-dev": {
+    "roave/security-advisories": "dev-latest",
+    "b13/make": "^0.1.6",
+    "typo3/cms-lowlevel": "^12.4"
+  },
+  "scripts": {
+    "post-create-project-cmd": [
+      "php -r \"copy('.env.example', '.env');\""
+    ],
+    "typo3": "typo3",
+    "migrate": [
+      "typo3 database:updateschema"
+    ]
+  },
+  "repositories": {
+    "0_local_packages": {
+      "type": "path",
+      "url": "src/extensions/*"
     }
+  }
 }

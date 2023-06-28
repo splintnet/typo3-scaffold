@@ -9,3 +9,7 @@ $GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['theme'] = 'EXT:theme/Configuratio
  * PageTS
  */
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig('<INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme/Configuration/TsConfig/Page/All.tsconfig">');
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addUserTSConfig(
+    '@import "EXT:theme/Configuration/TsConfig/User/default.tsconfig"'
+);

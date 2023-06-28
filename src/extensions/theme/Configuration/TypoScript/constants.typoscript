@@ -3,6 +3,20 @@
 ######################
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/constants.typoscript">
 
+[applicationContext == "Development"]
+config {
+    compressCss = 0
+    concatenateCss = 0
+    compressJs = 0
+    concatenateJs = 0
+    minifyHtml = 0
+    no_cache = 1
+}
+[end]
+
+config {
+    headerComment =
+}
 
 ############
 ### PAGE ###

@@ -1,0 +1,6 @@
+admPanel.enable.all = 1
+
+TCAdefaults {
+    pages.hidden = 0
+    tt_content.hidden = 0
+}
