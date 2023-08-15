@@ -29,6 +29,67 @@ page {
     }
 
     includeJSFooter {
+        cookie = EXT:theme/Resources/Public/JavaScript/Dist/cookieconsent.js
         theme_scripts = EXT:theme/Resources/Public/JavaScript/Dist/scripts.js
+    }
+}
+
+
+plugin.tx_news {
+    settings {
+        detail {
+            showPrevNext = 1
+        }
+    }
+}
+
+lib.contentElement.settings.responsiveimages.variants {
+    default {
+        sizes {
+            1x {
+                multiplier = 1
+            }
+
+            1\.5x {
+                multiplier = 1.5
+            }
+
+            2x {
+                multiplier = 2
+            }
+
+            3x {
+                multiplier = 3
+            }
+        }
+    }
+}
+
+pageNewsRSS = PAGE
+pageNewsRSS {
+    typeNum = {$plugin.tx_news.rss.channel.typeNum}
+    config {
+        disableAllHeaderCode = 1
+        xhtml_cleaning = none
+        admPanel = 0
+        debug = 0
+        disablePrefixComment = 1
+        metaCharset = utf-8
+        additionalHeaders.10.header = Content-Type:application/rss+xml;charset=utf-8
+        absRefPrefix = {$plugin.tx_news.rss.channel.link}
+        linkVars >
+    }
+
+    10 < tt_content.news_pi1.20
+    10 {
+        settings < plugin.tx_news.settings
+        settings {
+            categoryConjunction = notor
+            limit = 30
+            detailPid = 100
+            startingpoint = 84
+            format = xml
+            list.rss.channel.typeNum = {$plugin.tx_news.rss.channel.typeNum}
+        }
     }
 }

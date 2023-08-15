@@ -12,7 +12,8 @@
     "platform": {
       "php": "8.2.6"
     },
-    "sort-packages": true
+    "sort-packages": true,
+    "process-timeout": 0
   },
   "minimum-stability": "dev",
   "prefer-stable": true,
@@ -21,7 +22,7 @@
     "causal/image_autoresize": "^1.6",
     "clickstorm/cs-seo": "^8.1",
     "drblitz/google-indexer": "^2.0",
-    "georgringer/news": "^11.0",
+    "georgringer/news": "^11.1",
     "helhum/dotenv-connector": "^3.0",
     "helhum/typo3-console": "^8.0",
     "mask/mask": "^8.1",
@@ -74,9 +75,10 @@
       "php -r \"copy('.env.example', '.env');\""
     ],
     "typo3": "typo3",
-    "migrate": [
-      "typo3 database:updateschema"
-    ]
+    "clear": "typo3 cache:flush",
+    "migrate": "typo3 database:updateschema",
+    "serve": "TYPO3_CONTEXT=Development php -S localhost:8000 -t public",
+    "serve-sym": "symfony server:start"
   },
   "repositories": {
     "0_local_packages": {

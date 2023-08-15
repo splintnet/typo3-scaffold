@@ -4,14 +4,14 @@
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/constants.typoscript">
 
 [applicationContext == "Development"]
-config {
-    compressCss = 0
-    concatenateCss = 0
-    compressJs = 0
-    concatenateJs = 0
-    minifyHtml = 0
-    no_cache = 1
-}
+    config {
+        compressCss = 0
+        concatenateCss = 0
+        compressJs = 0
+        concatenateJs = 0
+        minifyHtml = 0
+        no_cache = 1
+    }
 [end]
 
 config {
@@ -30,13 +30,31 @@ page {
         alt = Theme
         linktitle = Theme
     }
+
     favicon {
         file = EXT:theme/Resources/Public/Icons/favicon.ico
     }
+
     fluidtemplate {
         layoutRootPath = EXT:theme/Resources/Private/Layouts/Page/
         partialRootPath = EXT:theme/Resources/Private/Partials/Page/
         templateRootPath = EXT:theme/Resources/Private/Templates/Page/
+    }
+
+    theme {
+        googleFont {
+            enable = 1
+            font = Montserrat
+            weight = 400,500,600,700
+        }
+
+        copyright {
+            text = Made with ❤ in Norderstedt. Code and Design by <a href="https://www.splintnet.de/?utm_source=web&utm_medium=web&utm_campaign=customer&utm_term=tb">splintnet.de</a>
+        }
+    }
+
+    meta {
+        google-site-verification =
     }
 }
 
@@ -69,6 +87,35 @@ plugin.bootstrap_package_contentelements {
 ### BOOTSTRAP SCSS CONSTANTS ###
 ################################
 plugin.bootstrap_package.settings.scss {
-    primary = #eb3e4a
-    secondary = #013859
+
+}
+
+plugin.tx_news {
+
+    view.twb5 {
+        templateRootPath = EXT:theme/Resources/Private/Templates/News/
+        partialRootPath = EXT:theme/Resources/Private/Partials/News/
+        layoutRootPath = EXT:theme/Resources/Private/Layouts/News/
+    }
+
+    rss.channel {
+        title = Theme
+        description =
+        link = https://www.theme.com
+        language = de-DE
+        copyright = Theme
+        category =
+        generator = Theme
+        typeNum = 9818
+    }
+
+    opengraph {
+        site_name = Theme
+
+        twitter {
+            card = summary
+            site = Theme
+            creator = Theme
+        }
+    }
 }
