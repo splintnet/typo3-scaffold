@@ -22,6 +22,8 @@
     "causal/image_autoresize": "^1.6",
     "clickstorm/cs-seo": "^8.1",
     "drblitz/google-indexer": "^2.0",
+    "friendsoftypo3/headless": "^4.2",
+    "friendsoftypo3/headless_news": "dev-master",
     "georgringer/news": "^11.1",
     "helhum/dotenv-connector": "^3.0",
     "helhum/typo3-console": "^8.0",
