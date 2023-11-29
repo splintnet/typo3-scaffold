@@ -125,16 +125,16 @@
         },
         {
             "name": "bk2k/bootstrap-package",
-            "version": "13.0.5",
+            "version": "14.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/benjaminkott/bootstrap_package.git",
-                "reference": "62f3b9e180dda55079ea86edfd1b88b176494979"
+                "reference": "45333312fceb60fc96a27fd648e8a5547dc230cc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/benjaminkott/bootstrap_package/zipball/62f3b9e180dda55079ea86edfd1b88b176494979",
-                "reference": "62f3b9e180dda55079ea86edfd1b88b176494979",
+                "url": "https://api.github.com/repos/benjaminkott/bootstrap_package/zipball/45333312fceb60fc96a27fd648e8a5547dc230cc",
+                "reference": "45333312fceb60fc96a27fd648e8a5547dc230cc",
                 "shasum": ""
             },
             "require": {
@@ -182,7 +182,7 @@
             "type": "typo3-cms-extension",
             "extra": {
                 "branch-alias": {
-                    "dev-BP_13_0": "13.0.x-dev"
+                    "dev-BP_14_0": "14.0.x-dev"
                 },
                 "typo3/cms": {
                     "extension-key": "bootstrap_package",
@@ -230,7 +230,7 @@
                     "type": "custom"
                 }
             ],
-            "time": "2023-06-30T13:45:52+00:00"
+            "time": "2023-08-14T14:44:23+00:00"
         },
         {
             "name": "causal/image_autoresize",
@@ -3988,10 +3988,10 @@
             "dist": {
                 "type": "path",
                 "url": "src/extensions/theme",
-                "reference": "d648f468a2d693a47ac64a5586a2ecc5cc5a4a3c"
+                "reference": "24d5c9a478fa30e850490d83f3b6aa0bd8a2bbc6"
             },
             "require": {
-                "bk2k/bootstrap-package": "^13.0"
+                "bk2k/bootstrap-package": "^14.0"
             },
             "type": "typo3-cms-extension",
             "extra": {
@@ -8531,44 +8531,49 @@
         },
         {
             "name": "typo3/cms-introduction",
-            "version": "4.6.1",
+            "version": "dev-main",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfTYPO3/introduction.git",
-                "reference": "61ffb7b9d11aa941de6ec8c1394adc0a9025730e"
+                "reference": "6b597d03e69fc1735a7b0bc1c3f1ac4b8a2ed6fa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfTYPO3/introduction/zipball/61ffb7b9d11aa941de6ec8c1394adc0a9025730e",
-                "reference": "61ffb7b9d11aa941de6ec8c1394adc0a9025730e",
+                "url": "https://api.github.com/repos/FriendsOfTYPO3/introduction/zipball/6b597d03e69fc1735a7b0bc1c3f1ac4b8a2ed6fa",
+                "reference": "6b597d03e69fc1735a7b0bc1c3f1ac4b8a2ed6fa",
                 "shasum": ""
             },
             "require": {
-                "bk2k/bootstrap-package": "^13.0.1",
+                "bk2k/bootstrap-package": "^14.0@dev",
                 "ext-pdo": "*",
                 "php": "^8.1",
-                "typo3/cms-beuser": "^12.3 || 12.*.*@dev",
-                "typo3/cms-core": "^12.3 || 12.*.*@dev",
-                "typo3/cms-extensionmanager": "^12.3 || 12.*.*@dev",
-                "typo3/cms-felogin": "^12.3 || 12.*.*@dev",
-                "typo3/cms-filemetadata": "^12.3 || 12.*.*@dev",
-                "typo3/cms-form": "^12.3 || 12.*.*@dev",
-                "typo3/cms-impexp": "^12.3 || 12.*.*@dev",
-                "typo3/cms-indexed-search": "^12.3 || 12.*.*@dev",
-                "typo3/cms-tstemplate": "^12.3 || 12.*.*@dev",
-                "typo3/minimal": "^12.0 || 12.*.*@dev"
+                "typo3/cms-beuser": "^12.4@dev",
+                "typo3/cms-core": "^12.4@dev",
+                "typo3/cms-extensionmanager": "^12.4@dev",
+                "typo3/cms-felogin": "^12.4@dev",
+                "typo3/cms-filemetadata": "^12.4@dev",
+                "typo3/cms-form": "^12.4@dev",
+                "typo3/cms-impexp": "^12.4@dev",
+                "typo3/cms-indexed-search": "^12.4@dev",
+                "typo3/cms-tstemplate": "^12.4@dev",
+                "typo3/minimal": "^12.4@dev"
             },
             "require-dev": {
-                "typo3/cms-belog": "^12.3 || 12.*.*@dev",
-                "typo3/cms-lowlevel": "^12.3 || 12.*.*@dev",
-                "typo3/cms-scheduler": "^12.3 || 12.*.*@dev",
-                "typo3/cms-setup": "^12.3 || 12.*.*@dev",
+                "codeception/codeception": "^5.0",
+                "codeception/module-asserts": "^3.0",
+                "codeception/module-webdriver": "^4.0",
+                "ergebnis/composer-normalize": "^2.0",
+                "typo3/cms-belog": "^12.4@dev",
+                "typo3/cms-lowlevel": "^12.4@dev",
+                "typo3/cms-scheduler": "^12.4@dev",
+                "typo3/cms-setup": "^12.4@dev",
                 "typo3/coding-standards": "^0.7.1"
             },
+            "default-branch": true,
             "type": "typo3-cms-extension",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "4.6.x-dev"
+                    "dev-main": "4.7.x-dev"
                 },
                 "typo3/cms": {
                     "extension-key": "introduction",
@@ -8596,7 +8601,7 @@
                 "issues": "https://github.com/FriendsOfTYPO3/introduction/issues",
                 "source": "https://github.com/FriendsOfTYPO3/introduction"
             },
-            "time": "2023-04-25T15:01:04+00:00"
+            "time": "2023-07-23T11:44:01+00:00"
         },
         {
             "name": "typo3/cms-reactions",
@@ -9785,12 +9790,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "ec77ac73fe989601450c32ff4796bb7264ba97db"
+                "reference": "2b23329e299c9a6cd98a82f5137ab4909c8e506d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/ec77ac73fe989601450c32ff4796bb7264ba97db",
-                "reference": "ec77ac73fe989601450c32ff4796bb7264ba97db",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/2b23329e299c9a6cd98a82f5137ab4909c8e506d",
+                "reference": "2b23329e299c9a6cd98a82f5137ab4909c8e506d",
                 "shasum": ""
             },
             "conflict": {
@@ -10211,6 +10216,7 @@
                 "really-simple-plugins/complianz-gdpr": "<6.4.2",
                 "remdex/livehelperchat": "<3.99",
                 "reportico-web/reportico": "<=7.1.21",
+                "rhukster/dom-sanitizer": "<1.0.7",
                 "rmccue/requests": ">=1.6,<1.8",
                 "robrichards/xmlseclibs": "<3.0.4",
                 "roots/soil": "<4.1",
@@ -10480,7 +10486,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-11-23T01:27:56+00:00"
+            "time": "2023-11-23T04:04:32+00:00"
         },
         {
             "name": "typo3/cms-lowlevel",
@@ -10544,6 +10550,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "friendsoftypo3/headless_news": 20,
         "splintnet/theme": 20,
         "roave/security-advisories": 20
     },

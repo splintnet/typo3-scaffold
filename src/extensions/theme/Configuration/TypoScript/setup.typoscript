@@ -29,8 +29,8 @@ page {
     }
 
     includeJSFooter {
-        cookie = EXT:theme/Resources/Public/JavaScript/Dist/cookieconsent.js
-        theme_scripts = EXT:theme/Resources/Public/JavaScript/Dist/scripts.js
+        cookie = EXT:theme/Resources/Public/JavaScript/Dist/cookieconsent.min.js
+        theme_scripts = EXT:theme/Resources/Public/JavaScript/Dist/main.min.js
     }
 }
 
