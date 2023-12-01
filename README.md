@@ -29,26 +29,28 @@ with your own environment configuration.
 
 ```bash
 composer exec -- typo3 setup \
-    --driver=mysqli \
-    --username=root \
-    --password=root \
-    --host=127.0.0.1 \
-    --port=3306 \
-    --dbname=typo3_example \
-    --admin-username=admin \
-    --admin-email="info@splintnet.de" \
-    --admin-user-password="Sup3rAdm1N!" \
-    --project-name="TYPO3 Project" \
-    --create-site="http://typo3-website.test/" \
-    --force
+ --no-interaction \
+ --driver=mysqli \
+ --username=root \
+ --password=root \
+ --host=127.0.0.1 \
+ --port=3306 \
+ --server-type=apache \
+ --dbname=typo3_scaffold \
+ --admin-username=jimping \
+ --admin-email="info@splintnet.de" \
+ --admin-user-password="Sup3r_Admin" \
+ --project-name="TYPO3 Website" \
+ --create-site="http://typo3-scaffold.test" \
+ --force
 
-vendor/bin/typo3 database:updateschema
+composer exec -- typo3 database:updateschema
 ```
 
 Generate Introduction Package
 
 ```bash
-vendor/bin/typo3 extension:setup
+composer exec -- typo3 extension:setup
 ```
 
 ### Development server
