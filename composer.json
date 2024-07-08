@@ -29,6 +29,7 @@
     "mask/mask": "^8.1",
     "plan2net/webp": "^5.0",
     "schliesser/sitecrawler": "^2.0",
+    "sebkln/content-slug": "^4.0",
     "sitegeist/sms-responsive-images": "^3.0",
     "splintnet/theme": "dev-main",
     "t3brightside/advancedtitle": "^1.2",

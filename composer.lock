@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8d2bb4d0043ff3752c922e37d5b028d3",
+    "content-hash": "5959ea4cd88f1b9d947391ebd215d59f",
     "packages": [
         {
             "name": "b13/container",
@@ -3382,6 +3382,62 @@
                 "source": "https://github.com/scssphp/scssphp/tree/v1.12.1"
             },
             "time": "2024-01-13T12:36:40+00:00"
+        },
+        {
+            "name": "sebkln/content-slug",
+            "version": "4.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sebkln/content_slug.git",
+                "reference": "20defe07d52182a54958a1a0006616f670d75511"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebkln/content_slug/zipball/20defe07d52182a54958a1a0006616f670d75511",
+                "reference": "20defe07d52182a54958a1a0006616f670d75511",
+                "shasum": ""
+            },
+            "require": {
+                "typo3/cms-core": ">=12.4.0 <13.4.99"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "content_slug"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Sebkln\\ContentSlug\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian Klein",
+                    "email": "sebastian@sebkln.de",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Adds a slug field for human-readable anchors (\"domain.com/page/#my-section\") to TYPO3 content elements. By default, this anchor is rendered as the header's id attribute.",
+            "homepage": "https://www.sebkln.de",
+            "keywords": [
+                "URL fragment",
+                "anchor",
+                "extension",
+                "human-readable",
+                "jump links",
+                "slug",
+                "typo3"
+            ],
+            "support": {
+                "issues": "https://github.com/sebkln/content_slug/issues",
+                "source": "https://github.com/sebkln/content_slug/tree/4.0.0"
+            },
+            "time": "2024-07-07T09:33:41+00:00"
         },
         {
             "name": "sitegeist/sms-responsive-images",
